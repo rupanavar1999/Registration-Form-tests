@@ -1,0 +1,126 @@
+.regContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .regContainer {
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 50px;
+  }
+}
+
+.heading {
+  font-size: 50px;
+  color: #ea580c;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+
+.viewContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 16px;
+  min-height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .viewContainer {
+    max-width: 450px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 16px #9aa5b1;
+  }
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.labelContainer {
+  margin-bottom: 0px;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #475569;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.name-input {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  border: 1px solid;
+  color: #9aa5b1;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+
+.error-field {
+  border: 1px solid #ff0b37;
+  background-color: #fef2f4;
+}
+
+.successLogo {
+  width: 72px;
+  text-align: center;
+}
+
+.button {
+  font-family: 'roboto';
+  font-size: 12px;
+  color: #ffffff;
+  padding: 8px 16px;
+  margin-top: 20px;
+  background-color: #ea580c;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    width: 100%;
+  }
+}
+
+.errorMsg {
+  align-self: start;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  line-height: 16px;
+  color: #ff0b37;
+}
+
+.imgContainer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
